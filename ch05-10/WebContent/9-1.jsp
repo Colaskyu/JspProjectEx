@@ -3,9 +3,15 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>9-1</title>
 </head>
 <body>
-aa
+쿠키목록 <br>
+<%
+	Cookie cookie = new Cookie("name","cho");
+	Cookie cookie1 = new Cookie("name1","한글");
+	response.addCookie(cookie);
+	response.addCookie(cookie1);
+%>
 </body>
 </html>
